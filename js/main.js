@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  // Language switch
+  // Language switch – English / French
   const langBtn = document.getElementById('langSwitch');
   const savedLang = localStorage.getItem('lang') || 'en';
   document.documentElement.setAttribute('data-lang', savedLang);
@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', () => {
   if (langBtn) {
     langBtn.addEventListener('click', () => {
       const current = document.documentElement.getAttribute('data-lang');
-      const next = current === 'en' ? 'zh' : 'en';
+      const next = current === 'en' ? 'fr' : 'en';
       document.documentElement.setAttribute('data-lang', next);
       localStorage.setItem('lang', next);
       updateLangButton(next);
@@ -68,7 +68,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function updateLangButton(lang) {
     if (!langBtn) return;
-    langBtn.textContent = lang === 'en' ? '中文' : 'EN';
+    langBtn.textContent = lang === 'en' ? 'FR' : 'EN';
   }
 
   // Initialize Map
