@@ -1,9 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About – IBCA</title>
+  <meta name="description" content="About the International Bank of Climate Adaptation (IBCA)">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="css/style.css">
@@ -12,63 +15,117 @@
   <header class="header" id="header">
     <div class="container nav-container">
       <a href="index.html" class="logo">
-        <img src="logo.png" alt="IBCA Logo" style="height: 42px; width: auto; border-radius: 8px;">
+        <img src="logo.png" alt="IBCA Logo">
         <span>IBCA</span>
       </a>
       <nav class="nav" id="nav">
-        <a href="index.html" class="nav-link">Home</a>
-        <a href="about.html" class="nav-link active">About</a>
-        <a href="mandate.html" class="nav-link">Mandate</a>
-        <a href="membership.html" class="nav-link">Membership</a>
-        <a href="governance.html" class="nav-link">Governance</a>
-        <a href="powers.html" class="nav-link">Powers</a>
-        <a href="funding.html" class="nav-link">Funding</a>
-        <a href="contact.html" class="nav-link">Contact</a>
+        <a href="index.html" class="nav-link">
+          <span class="lang-en">Home</span><span class="lang-zh">首页</span>
+        </a>
+        <a href="about.html" class="nav-link active">
+          <span class="lang-en">About</span><span class="lang-zh">关于</span>
+        </a>
+        <a href="mandate.html" class="nav-link">
+          <span class="lang-en">Mandate</span><span class="lang-zh">使命</span>
+        </a>
+        <a href="membership.html" class="nav-link">
+          <span class="lang-en">Membership</span><span class="lang-zh">成员</span>
+        </a>
+        <a href="governance.html" class="nav-link">
+          <span class="lang-en">Governance</span><span class="lang-zh">治理</span>
+        </a>
+        <a href="powers.html" class="nav-link">
+          <span class="lang-en">Powers</span><span class="lang-zh">权力</span>
+        </a>
+        <a href="funding.html" class="nav-link">
+          <span class="lang-en">Funding</span><span class="lang-zh">资金</span>
+        </a>
+        <a href="contact.html" class="nav-link">
+          <span class="lang-en">Contact</span><span class="lang-zh">联系</span>
+        </a>
+        <button class="lang-switch" id="langSwitch">中文</button>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode"><i class="fas fa-moon"></i></button>
       </nav>
-      <button class="menu-toggle" id="menuToggle"><i class="fas fa-bars"></i></button>
+      <button class="menu-toggle" id="menuToggle" aria-label="Menu"><i class="fas fa-bars"></i></button>
     </div>
   </header>
 
   <section class="page-hero">
     <div class="container">
-      <h1>About IBCA</h1>
-      <p>Identity and foundational vision of the International Bank of Climate Adaptation</p>
+      <h1>
+        <span class="lang-en">About IBCA</span>
+        <span class="lang-zh">关于 IBCA</span>
+      </h1>
+      <p>
+        <span class="lang-en">Identity and foundational vision of the International Bank of Climate Adaptation</span>
+        <span class="lang-zh">国际气候适应银行的身份与基础愿景</span>
+      </p>
     </div>
   </section>
 
   <section class="content-section">
     <div class="container">
       <div class="content-block">
-        <h2>Identity</h2>
-        <p><strong>Full Name:</strong> International Bank of Climate Adaptation (IBCA)</p>
-        <p><strong>Headquarters:</strong> Geneva, Switzerland</p>
-        <p>IBCA is a proposed treaty-based international financial institution established to address the critical gap in climate adaptation finance for the world’s most vulnerable countries.</p>
+        <h2>
+          <span class="lang-en">Identity</span>
+          <span class="lang-zh">身份</span>
+        </h2>
+        <p><strong><span class="lang-en">Full Name:</span><span class="lang-zh">全称：</span></strong> International Bank of Climate Adaptation (IBCA)</p>
+        <p><strong><span class="lang-en">Headquarters:</span><span class="lang-zh">总部：</span></strong> <span class="lang-en">Geneva, Switzerland</span><span class="lang-zh">瑞士日内瓦</span></p>
+        <p>
+          <span class="lang-en">IBCA is a proposed treaty-based international financial institution established to address the critical gap in climate adaptation finance for the world’s most vulnerable countries.</span>
+          <span class="lang-zh">IBCA 是一个拟议的基于条约的国际金融机构，旨在填补全球最脆弱国家气候适应融资的关键缺口。</span>
+        </p>
       </div>
 
       <div class="content-block">
-        <h2>Why IBCA Exists</h2>
-        <p>Adverse impacts of climate change — particularly extreme weather events, sea-level rise, and ecosystem degradation — disproportionately threaten Least Developed Countries (LDCs) and Small Island Developing States (SIDS).</p>
-        <p>Existing international financial institutions and climate funds have inadequately addressed the urgent adaptation needs of the most vulnerable. IBCA is designed as a dedicated institution focused exclusively on climate adaptation, founded on sound banking principles and strictly precluded from diversifying its mandate.</p>
+        <h2>
+          <span class="lang-en">Why IBCA Exists</span>
+          <span class="lang-zh">为何需要 IBCA</span>
+        </h2>
+        <p>
+          <span class="lang-en">Adverse impacts of climate change — particularly extreme weather events, sea-level rise, and ecosystem degradation — disproportionately threaten Least Developed Countries (LDCs) and Small Island Developing States (SIDS).</span>
+          <span class="lang-zh">气候变化的不利影响——尤其是极端天气事件、海平面上升和生态系统退化——不成比例地威胁着最不发达国家（LDCs）和小岛屿发展中国家（SIDS）。</span>
+        </p>
+        <p>
+          <span class="lang-en">Existing international financial institutions and climate funds have inadequately addressed the urgent adaptation needs of the most vulnerable. IBCA is designed as a dedicated institution focused exclusively on climate adaptation, founded on sound banking principles and strictly precluded from diversifying its mandate.</span>
+          <span class="lang-zh">现有国际金融机构和气候基金未能充分满足最脆弱国家的紧急适应需求。IBCA 被设计为一个专门机构，仅专注于气候适应，基于稳健的银行原则，并严格禁止扩展其使命范围。</span>
+        </p>
       </div>
 
       <div class="content-block">
-        <h2>Core Design Principles</h2>
+        <h2>
+          <span class="lang-en">Core Design Principles</span>
+          <span class="lang-zh">核心设计原则</span>
+        </h2>
         <div class="info-grid">
           <div class="info-card">
-            <h4>Narrow Mandate</h4>
-            <p>Legally binding exclusive purpose prevents mission creep. Any amendment requires the highest voting threshold.</p>
+            <h4><span class="lang-en">Narrow Mandate</span><span class="lang-zh">狭窄使命</span></h4>
+            <p>
+              <span class="lang-en">Legally binding exclusive purpose prevents mission creep. Any amendment requires the highest voting threshold.</span>
+              <span class="lang-zh">具有法律约束力的专属宗旨防止使命蔓延。任何修正案都需要最高投票门槛。</span>
+            </p>
           </div>
           <div class="info-card">
-            <h4>Sound Banking</h4>
-            <p>Operates on sound banking principles while prioritising the most climate-vulnerable nations.</p>
+            <h4><span class="lang-en">Sound Banking</span><span class="lang-zh">稳健银行原则</span></h4>
+            <p>
+              <span class="lang-en">Operates on sound banking principles while prioritising the most climate-vulnerable nations.</span>
+              <span class="lang-zh">在优先考虑气候最脆弱国家的同时，遵循稳健的银行原则运营。</span>
+            </p>
           </div>
           <div class="info-card">
-            <h4>Win-Win Cooperation</h4>
-            <p>Empowers powerful states to support vulnerable states through innovative governance while maintaining robust financial standing.</p>
+            <h4><span class="lang-en">Win-Win Cooperation</span><span class="lang-zh">共赢合作</span></h4>
+            <p>
+              <span class="lang-en">Empowers powerful states to support vulnerable states through innovative governance while maintaining robust financial standing.</span>
+              <span class="lang-zh">通过创新治理使强大国家能够支持脆弱国家，同时保持稳健的财务地位。</span>
+            </p>
           </div>
           <div class="info-card">
-            <h4>Complementarity</h4>
-            <p>Designed to cooperate with existing specialised organisations (including WMO and UN agencies) and non-State stakeholders to maximise synergies and avoid duplication.</p>
+            <h4><span class="lang-en">Complementarity</span><span class="lang-zh">互补性</span></h4>
+            <p>
+              <span class="lang-en">Designed to cooperate with existing specialised organisations (including WMO and UN agencies) and non-State stakeholders to maximise synergies and avoid duplication.</span>
+              <span class="lang-zh">设计用于与现有专门组织（包括世界气象组织和联合国机构）以及非国家利益攸关方合作，以最大化协同效应并避免重复。</span>
+            </p>
           </div>
         </div>
       </div>
@@ -77,8 +134,33 @@
 
   <footer class="footer">
     <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo">
+            <img src="logo.png" alt="IBCA" style="height:36px;">
+            <span>IBCA</span>
+          </div>
+          <p>
+            <span class="lang-en">International Bank of Climate Adaptation<br>Headquarters: Geneva, Switzerland</span>
+            <span class="lang-zh">国际气候适应银行<br>总部：瑞士日内瓦</span>
+          </p>
+        </div>
+        <div class="footer-links">
+          <h4><span class="lang-en">Explore</span><span class="lang-zh">探索</span></h4>
+          <a href="mandate.html"><span class="lang-en">Mandate</span><span class="lang-zh">使命</span></a>
+          <a href="membership.html"><span class="lang-en">Membership</span><span class="lang-zh">成员</span></a>
+          <a href="governance.html"><span class="lang-en">Governance</span><span class="lang-zh">治理</span></a>
+          <a href="funding.html"><span class="lang-en">Funding</span><span class="lang-zh">资金</span></a>
+        </div>
+        <div class="footer-links">
+          <h4><span class="lang-en">Institution</span><span class="lang-zh">机构</span></h4>
+          <a href="powers.html"><span class="lang-en">Powers & Immunities</span><span class="lang-zh">权力与豁免</span></a>
+          <a href="about.html"><span class="lang-en">About IBCA</span><span class="lang-zh">关于 IBCA</span></a>
+          <a href="contact.html"><span class="lang-en">Contact</span><span class="lang-zh">联系我们</span></a>
+        </div>
+      </div>
       <div class="footer-bottom">
-        <p>© 2026 International Bank of Climate Adaptation (IBCA). Headquarters: Geneva, Switzerland.</p>
+        <p>© 2026 International Bank of Climate Adaptation (IBCA). All rights reserved.</p>
       </div>
     </div>
   </footer>
