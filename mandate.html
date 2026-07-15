@@ -1,9 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mandate – IBCA</title>
+  <meta name="description" content="Mandate of the International Bank of Climate Adaptation (IBCA)">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="css/style.css">
@@ -12,51 +15,133 @@
   <header class="header" id="header">
     <div class="container nav-container">
       <a href="index.html" class="logo">
-        <img src="logo.png" alt="IBCA Logo" style="height: 42px; width: auto; border-radius: 8px;">
+        <img src="logo.png" alt="IBCA Logo">
         <span>IBCA</span>
       </a>
       <nav class="nav" id="nav">
-        <a href="index.html" class="nav-link">Home</a>
-        <a href="about.html" class="nav-link">About</a>
-        <a href="mandate.html" class="nav-link active">Mandate</a>
-        <a href="membership.html" class="nav-link">Membership</a>
-        <a href="governance.html" class="nav-link">Governance</a>
-        <a href="powers.html" class="nav-link">Powers</a>
-        <a href="funding.html" class="nav-link">Funding</a>
-        <a href="contact.html" class="nav-link">Contact</a>
+        <a href="index.html" class="nav-link">
+          <span class="lang-en">Home</span><span class="lang-zh">首页</span>
+        </a>
+        <a href="about.html" class="nav-link">
+          <span class="lang-en">About</span><span class="lang-zh">关于</span>
+        </a>
+        <a href="mandate.html" class="nav-link active">
+          <span class="lang-en">Mandate</span><span class="lang-zh">使命</span>
+        </a>
+        <a href="membership.html" class="nav-link">
+          <span class="lang-en">Membership</span><span class="lang-zh">成员</span>
+        </a>
+        <a href="governance.html" class="nav-link">
+          <span class="lang-en">Governance</span><span class="lang-zh">治理</span>
+        </a>
+        <a href="powers.html" class="nav-link">
+          <span class="lang-en">Powers</span><span class="lang-zh">权力</span>
+        </a>
+        <a href="funding.html" class="nav-link">
+          <span class="lang-en">Funding</span><span class="lang-zh">资金</span>
+        </a>
+        <a href="contact.html" class="nav-link">
+          <span class="lang-en">Contact</span><span class="lang-zh">联系</span>
+        </a>
+        <button class="lang-switch" id="langSwitch">中文</button>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode"><i class="fas fa-moon"></i></button>
       </nav>
-      <button class="menu-toggle" id="menuToggle"><i class="fas fa-bars"></i></button>
+      <button class="menu-toggle" id="menuToggle" aria-label="Menu"><i class="fas fa-bars"></i></button>
     </div>
   </header>
 
   <section class="page-hero">
     <div class="container">
-      <h1>Mandate</h1>
-      <p>Preamble and Object & Purposes of the International Bank of Climate Adaptation</p>
+      <h1>
+        <span class="lang-en">Mandate</span>
+        <span class="lang-zh">使命</span>
+      </h1>
+      <p>
+        <span class="lang-en">Preamble and Object & Purposes of the International Bank of Climate Adaptation</span>
+        <span class="lang-zh">国际气候适应银行的序言与宗旨目标</span>
+      </p>
     </div>
   </section>
 
   <section class="content-section">
     <div class="container">
       <div class="content-block">
-        <h2>Preamble</h2>
+        <h2>
+          <span class="lang-en">Preamble</span>
+          <span class="lang-zh">序言</span>
+        </h2>
         <div class="info-grid">
-          <div class="info-card"><h4>Concerning</h4><p>Adverse impacts of climate change, in particular extreme weather events, sea-level rise, and ecosystem degradation, which disproportionately threaten Least Developed Countries and Small Island Developing States.</p></div>
-          <div class="info-card"><h4>Recognizing</h4><p>That the existing international financial institutions and climate funds have inadequately addressed the urgent adaptation needs of the most vulnerable.</p></div>
-          <div class="info-card"><h4>Determining</h4><p>To establish a new international financial institution dedicated exclusively to climate adaptation, including financing resilient infrastructure, scientific research, and ecosystem restoration — founded on sound banking principles, and strictly precluded from diversifying its mandate.</p></div>
-          <div class="info-card"><h4>Convincing</h4><p>That such an institution must empower powerful states to support States which have vulnerable climate through innovative governance, while maintaining robust financial standing.</p></div>
-          <div class="info-card"><h4>Reminding</h4><p>That IBCA is an international organization that all states need to meet their obligations in order to maintain a win-win phenomenon.</p></div>
-          <div class="info-card"><h4>Aspiring</h4><p>To enable effective cooperation with existing specialised international organisations and non-State stakeholders, to maximise synergies and avoid duplication.</p></div>
+          <div class="info-card">
+            <h4><span class="lang-en">Concerning</span><span class="lang-zh">关注</span></h4>
+            <p>
+              <span class="lang-en">Adverse impacts of climate change, in particular extreme weather events, sea-level rise, and ecosystem degradation, which disproportionately threaten Least Developed Countries and Small Island Developing States.</span>
+              <span class="lang-zh">气候变化的不利影响，特别是极端天气事件、海平面上升和生态系统退化，对最不发达国家和小岛屿发展中国家构成不成比例的威胁。</span>
+            </p>
+          </div>
+          <div class="info-card">
+            <h4><span class="lang-en">Recognizing</span><span class="lang-zh">认识到</span></h4>
+            <p>
+              <span class="lang-en">That the existing international financial institutions and climate funds have inadequately addressed the urgent adaptation needs of the most vulnerable.</span>
+              <span class="lang-zh">现有国际金融机构和气候基金未能充分满足最脆弱国家的紧急适应需求。</span>
+            </p>
+          </div>
+          <div class="info-card">
+            <h4><span class="lang-en">Determining</span><span class="lang-zh">决定</span></h4>
+            <p>
+              <span class="lang-en">To establish a new international financial institution dedicated exclusively to climate adaptation, including financing resilient infrastructure, scientific research, and ecosystem restoration — founded on sound banking principles, and strictly precluded from diversifying its mandate.</span>
+              <span class="lang-zh">建立一个专门致力于气候适应的新国际金融机构，包括资助韧性基础设施、科学研究和生态系统恢复——基于稳健的银行原则，并严格禁止扩展其使命范围。</span>
+            </p>
+          </div>
+          <div class="info-card">
+            <h4><span class="lang-en">Convincing</span><span class="lang-zh">坚信</span></h4>
+            <p>
+              <span class="lang-en">That such an institution must empower powerful states to support States which have vulnerable climate through innovative governance, while maintaining robust financial standing.</span>
+              <span class="lang-zh">这样的机构必须通过创新治理使强大国家能够支持气候脆弱国家，同时保持稳健的财务地位。</span>
+            </p>
+          </div>
+          <div class="info-card">
+            <h4><span class="lang-en">Reminding</span><span class="lang-zh">提醒</span></h4>
+            <p>
+              <span class="lang-en">That IBCA is an international organization that all states need to meet their obligations in order to maintain a win-win phenomenon.</span>
+              <span class="lang-zh">IBCA 是一个国际组织，所有国家都需要履行其义务，以维持共赢局面。</span>
+            </p>
+          </div>
+          <div class="info-card">
+            <h4><span class="lang-en">Aspiring</span><span class="lang-zh"> aspiration</span></h4>
+            <p>
+              <span class="lang-en">To enable effective cooperation with existing specialised international organisations and non-State stakeholders, to maximise synergies and avoid duplication.</span>
+              <span class="lang-zh">促进与现有专门国际组织和非国家利益攸关方的有效合作，以最大化协同效应并避免重复。</span>
+            </p>
+          </div>
         </div>
       </div>
 
       <div class="content-block">
-        <h2>Object and Purposes</h2>
+        <h2>
+          <span class="lang-en">Object and Purposes</span>
+          <span class="lang-zh">宗旨与目标</span>
+        </h2>
         <ol style="padding-left: 24px; color: var(--gray);">
-          <li style="margin-bottom: 18px;"><strong>Exclusive purpose:</strong> The Bank’s exclusive purpose shall be to finance climate adaptation in vulnerable regions, prioritising Least Developed Countries and Small Island Developing States, through resilient infrastructure, scientific research, and ecosystem restoration.</li>
-          <li style="margin-bottom: 18px;"><strong>No mission creep:</strong> The Bank shall not engage in general development lending or any activity outside this purpose, nor shall it diversify its mandate. Any amendment shall require the highest voting threshold under this Agreement.</li>
-          <li style="margin-bottom: 18px;"><strong>WMO connection:</strong> The Bank will maintain a close connection with the World Meteorological Organization, since climate variation trends form the basis for funding and adaptation methods.</li>
-          <li style="margin-bottom: 18px;"><strong>Cooperation:</strong> The Bank may cooperate with United Nations specialised agencies and existing climate finance institutions to ensure complementarity, and may partner with non-State stakeholders including civil society, research bodies, and the private sector.</li>
+          <li style="margin-bottom: 18px;">
+            <strong><span class="lang-en">Exclusive purpose:</span><span class="lang-zh">专属宗旨：</span></strong>
+            <span class="lang-en">The Bank’s exclusive purpose shall be to finance climate adaptation in vulnerable regions, prioritising Least Developed Countries and Small Island Developing States, through resilient infrastructure, scientific research, and ecosystem restoration.</span>
+            <span class="lang-zh">银行的专属宗旨是为脆弱地区的气候适应提供融资，优先支持最不发达国家和小岛屿发展中国家，通过韧性基础设施、科学研究和生态系统恢复实现。</span>
+          </li>
+          <li style="margin-bottom: 18px;">
+            <strong><span class="lang-en">No mission creep:</span><span class="lang-zh">禁止使命蔓延：</span></strong>
+            <span class="lang-en">The Bank shall not engage in general development lending or any activity outside this purpose, nor shall it diversify its mandate. Any amendment shall require the highest voting threshold under this Agreement.</span>
+            <span class="lang-zh">银行不得从事一般发展贷款或任何超出此宗旨的活动，也不得扩展其使命。任何修正案均需本协定下的最高投票门槛。</span>
+          </li>
+          <li style="margin-bottom: 18px;">
+            <strong><span class="lang-en">WMO connection:</span><span class="lang-zh">与世界气象组织的联系：</span></strong>
+            <span class="lang-en">The Bank will maintain a close connection with the World Meteorological Organization, since climate variation trends form the basis for funding and adaptation methods.</span>
+            <span class="lang-zh">银行将与世界气象组织保持密切联系，因为气候变异趋势是融资和适应方法的基础。</span>
+          </li>
+          <li style="margin-bottom: 18px;">
+            <strong><span class="lang-en">Cooperation:</span><span class="lang-zh">合作：</span></strong>
+            <span class="lang-en">The Bank may cooperate with United Nations specialised agencies and existing climate finance institutions to ensure complementarity, and may partner with non-State stakeholders including civil society, research bodies, and the private sector.</span>
+            <span class="lang-zh">银行可与联合国专门机构及现有气候融资机构合作以确保互补性，并可与包括民间社会、研究机构和私营部门在内的非国家利益攸关方合作。</span>
+          </li>
         </ol>
       </div>
     </div>
@@ -64,7 +149,34 @@
 
   <footer class="footer">
     <div class="container">
-      <div class="footer-bottom"><p>© 2026 International Bank of Climate Adaptation (IBCA).</p></div>
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo">
+            <img src="logo.png" alt="IBCA" style="height:36px;">
+            <span>IBCA</span>
+          </div>
+          <p>
+            <span class="lang-en">International Bank of Climate Adaptation<br>Headquarters: Geneva, Switzerland</span>
+            <span class="lang-zh">国际气候适应银行<br>总部：瑞士日内瓦</span>
+          </p>
+        </div>
+        <div class="footer-links">
+          <h4><span class="lang-en">Explore</span><span class="lang-zh">探索</span></h4>
+          <a href="mandate.html"><span class="lang-en">Mandate</span><span class="lang-zh">使命</span></a>
+          <a href="membership.html"><span class="lang-en">Membership</span><span class="lang-zh">成员</span></a>
+          <a href="governance.html"><span class="lang-en">Governance</span><span class="lang-zh">治理</span></a>
+          <a href="funding.html"><span class="lang-en">Funding</span><span class="lang-zh">资金</span></a>
+        </div>
+        <div class="footer-links">
+          <h4><span class="lang-en">Institution</span><span class="lang-zh">机构</span></h4>
+          <a href="powers.html"><span class="lang-en">Powers & Immunities</span><span class="lang-zh">权力与豁免</span></a>
+          <a href="about.html"><span class="lang-en">About IBCA</span><span class="lang-zh">关于 IBCA</span></a>
+          <a href="contact.html"><span class="lang-en">Contact</span><span class="lang-zh">联系我们</span></a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 International Bank of Climate Adaptation (IBCA). All rights reserved.</p>
+      </div>
     </div>
   </footer>
   <script src="js/main.js"></script>
