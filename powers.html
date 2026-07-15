@@ -1,9 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Powers & Immunities – IBCA</title>
+  <meta name="description" content="Powers and Privileges of the International Bank of Climate Adaptation (IBCA)">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="css/style.css">
@@ -12,58 +15,129 @@
   <header class="header" id="header">
     <div class="container nav-container">
       <a href="index.html" class="logo">
-        <img src="logo.png" alt="IBCA Logo" style="height: 42px; width: auto; border-radius: 8px;">
+        <img src="logo.png" alt="IBCA Logo">
         <span>IBCA</span>
       </a>
       <nav class="nav" id="nav">
-        <a href="index.html" class="nav-link">Home</a>
-        <a href="about.html" class="nav-link">About</a>
-        <a href="mandate.html" class="nav-link">Mandate</a>
-        <a href="membership.html" class="nav-link">Membership</a>
-        <a href="governance.html" class="nav-link">Governance</a>
-        <a href="powers.html" class="nav-link active">Powers</a>
-        <a href="funding.html" class="nav-link">Funding</a>
-        <a href="contact.html" class="nav-link">Contact</a>
+        <a href="index.html" class="nav-link">
+          <span class="lang-en">Home</span><span class="lang-zh">首页</span>
+        </a>
+        <a href="about.html" class="nav-link">
+          <span class="lang-en">About</span><span class="lang-zh">关于</span>
+        </a>
+        <a href="mandate.html" class="nav-link">
+          <span class="lang-en">Mandate</span><span class="lang-zh">使命</span>
+        </a>
+        <a href="membership.html" class="nav-link">
+          <span class="lang-en">Membership</span><span class="lang-zh">成员</span>
+        </a>
+        <a href="governance.html" class="nav-link">
+          <span class="lang-en">Governance</span><span class="lang-zh">治理</span>
+        </a>
+        <a href="powers.html" class="nav-link active">
+          <span class="lang-en">Powers</span><span class="lang-zh">权力</span>
+        </a>
+        <a href="funding.html" class="nav-link">
+          <span class="lang-en">Funding</span><span class="lang-zh">资金</span>
+        </a>
+        <a href="contact.html" class="nav-link">
+          <span class="lang-en">Contact</span><span class="lang-zh">联系</span>
+        </a>
+        <button class="lang-switch" id="langSwitch">中文</button>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode"><i class="fas fa-moon"></i></button>
       </nav>
-      <button class="menu-toggle" id="menuToggle"><i class="fas fa-bars"></i></button>
+      <button class="menu-toggle" id="menuToggle" aria-label="Menu"><i class="fas fa-bars"></i></button>
     </div>
   </header>
 
   <section class="page-hero">
     <div class="container">
-      <h1>Powers & Privileges</h1>
-      <p>Legal powers of the Bank and the six pillars of protection</p>
+      <h1>
+        <span class="lang-en">Powers & Privileges</span>
+        <span class="lang-zh">权力与特权</span>
+      </h1>
+      <p>
+        <span class="lang-en">Legal powers of the Bank and the six pillars of protection</span>
+        <span class="lang-zh">银行的法律权力与六大保护支柱</span>
+      </p>
     </div>
   </section>
 
   <section class="content-section">
     <div class="container">
       <div class="content-block">
-        <h2>Powers of IBCA</h2>
+        <h2>
+          <span class="lang-en">Powers of IBCA</span>
+          <span class="lang-zh">IBCA 的权力</span>
+        </h2>
         <div class="table-wrap">
           <table>
-            <thead><tr><th>Category</th><th>Powers</th></tr></thead>
+            <thead>
+              <tr>
+                <th><span class="lang-en">Category</span><span class="lang-zh">类别</span></th>
+                <th><span class="lang-en">Powers</span><span class="lang-zh">权力</span></th>
+              </tr>
+            </thead>
             <tbody>
-              <tr><td><strong>Treaty-Making</strong></td><td>HQ agreements · WMO cooperation · Co-financing agreements</td></tr>
-              <tr><td><strong>Financial</strong></td><td>Raise and manage capital · Borrow funds · Provide loans and guarantees</td></tr>
-              <tr><td><strong>Operational</strong></td><td>Approve adaptation projects · Implement and monitor · Take urgent action</td></tr>
-              <tr><td><strong>Regulatory</strong></td><td>Set eligibility criteria · Environmental safeguards · Prevent mandate expansion</td></tr>
-              <tr><td><strong>Administrative</strong></td><td>Employ staff · Manage budget · Administrative Tribunal</td></tr>
+              <tr>
+                <td><strong><span class="lang-en">Treaty-Making</span><span class="lang-zh">缔约</span></strong></td>
+                <td><span class="lang-en">HQ agreements · WMO cooperation · Co-financing agreements</span><span class="lang-zh">总部协定 · 与世界气象组织合作 · 共同融资协定</span></td>
+              </tr>
+              <tr>
+                <td><strong><span class="lang-en">Financial</span><span class="lang-zh">财务</span></strong></td>
+                <td><span class="lang-en">Raise and manage capital · Borrow funds · Provide loans and guarantees</span><span class="lang-zh">筹集与管理资本 · 借款 · 提供贷款与担保</span></td>
+              </tr>
+              <tr>
+                <td><strong><span class="lang-en">Operational</span><span class="lang-zh">运营</span></strong></td>
+                <td><span class="lang-en">Approve adaptation projects · Implement and monitor · Take urgent action</span><span class="lang-zh">批准适应项目 · 实施与监测 · 采取紧急行动</span></td>
+              </tr>
+              <tr>
+                <td><strong><span class="lang-en">Regulatory</span><span class="lang-zh">监管</span></strong></td>
+                <td><span class="lang-en">Set eligibility criteria · Environmental safeguards · Prevent mandate expansion</span><span class="lang-zh">设定资格标准 · 环境保障 · 防止使命扩展</span></td>
+              </tr>
+              <tr>
+                <td><strong><span class="lang-en">Administrative</span><span class="lang-zh">行政</span></strong></td>
+                <td><span class="lang-en">Employ staff · Manage budget · Administrative Tribunal</span><span class="lang-zh">聘用员工 · 管理预算 · 行政法庭</span></td>
+              </tr>
             </tbody>
           </table>
         </div>
       </div>
 
       <div class="content-block">
-        <h2>Privileges and Immunities</h2>
-        <p>The Bank, its assets, premises and official communications shall be inviolable and immune from every form of legal process, tax or interference, except insofar as it has expressly waived its immunity. Officials enjoy immunity for acts performed in their official capacity.</p>
+        <h2>
+          <span class="lang-en">Privileges and Immunities</span>
+          <span class="lang-zh">特权与豁免</span>
+        </h2>
+        <p>
+          <span class="lang-en">The Bank, its assets, premises and official communications shall be inviolable and immune from every form of legal process, tax or interference, except insofar as it has expressly waived its immunity. Officials enjoy immunity for acts performed in their official capacity.</span>
+          <span class="lang-zh">银行及其资产、房舍和官方通信不可侵犯，并免于任何形式的法律程序、税收或干预，除非其明确放弃豁免。官员对其以官方身份实施的行为享有豁免。</span>
+        </p>
         <div class="info-grid" style="margin-top:28px;">
-          <div class="info-card"><h4>Legal Processes</h4><p>Jurisdictional immunity for bank loan decisions.</p></div>
-          <div class="info-card"><h4>Assets & Property</h4><p>Complete protection from financial freezing or seizure.</p></div>
-          <div class="info-card"><h4>Premises & Archives</h4><p>Absolute inviolability against host state intrusion.</p></div>
-          <div class="info-card"><h4>Fiscal Status</h4><p>Tax exemption for all institutional income and property.</p></div>
-          <div class="info-card"><h4>Personnel</h4><p>Staff immunity from personal civil/criminal liability.</p></div>
-          <div class="info-card"><h4>Communications</h4><p>Freedom of unhindered contact with member states.</p></div>
+          <div class="info-card">
+            <h4><span class="lang-en">Legal Processes</span><span class="lang-zh">法律程序</span></h4>
+            <p><span class="lang-en">Jurisdictional immunity for bank loan decisions.</span><span class="lang-zh">银行贷款决策的司法豁免。</span></p>
+          </div>
+          <div class="info-card">
+            <h4><span class="lang-en">Assets & Property</span><span class="lang-zh">资产与财产</span></h4>
+            <p><span class="lang-en">Complete protection from financial freezing or seizure.</span><span class="lang-zh">完全免于金融冻结或扣押。</span></p>
+          </div>
+          <div class="info-card">
+            <h4><span class="lang-en">Premises & Archives</span><span class="lang-zh">房舍与档案</span></h4>
+            <p><span class="lang-en">Absolute inviolability against host state intrusion.</span><span class="lang-zh">对东道国侵入的绝对不可侵犯性。</span></p>
+          </div>
+          <div class="info-card">
+            <h4><span class="lang-en">Fiscal Status</span><span class="lang-zh">财政地位</span></h4>
+            <p><span class="lang-en">Tax exemption for all institutional income and property.</span><span class="lang-zh">所有机构收入和财产的免税。</span></p>
+          </div>
+          <div class="info-card">
+            <h4><span class="lang-en">Personnel</span><span class="lang-zh">人员</span></h4>
+            <p><span class="lang-en">Staff immunity from personal civil/criminal liability.</span><span class="lang-zh">工作人员免于个人民事/刑事责任。</span></p>
+          </div>
+          <div class="info-card">
+            <h4><span class="lang-en">Communications</span><span class="lang-zh">通信</span></h4>
+            <p><span class="lang-en">Freedom of unhindered contact with member states.</span><span class="lang-zh">与成员国无阻碍联系的自由。</span></p>
+          </div>
         </div>
       </div>
     </div>
@@ -71,7 +145,34 @@
 
   <footer class="footer">
     <div class="container">
-      <div class="footer-bottom"><p>© 2026 International Bank of Climate Adaptation (IBCA).</p></div>
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo">
+            <img src="logo.png" alt="IBCA" style="height:36px;">
+            <span>IBCA</span>
+          </div>
+          <p>
+            <span class="lang-en">International Bank of Climate Adaptation<br>Headquarters: Geneva, Switzerland</span>
+            <span class="lang-zh">国际气候适应银行<br>总部：瑞士日内瓦</span>
+          </p>
+        </div>
+        <div class="footer-links">
+          <h4><span class="lang-en">Explore</span><span class="lang-zh">探索</span></h4>
+          <a href="mandate.html"><span class="lang-en">Mandate</span><span class="lang-zh">使命</span></a>
+          <a href="membership.html"><span class="lang-en">Membership</span><span class="lang-zh">成员</span></a>
+          <a href="governance.html"><span class="lang-en">Governance</span><span class="lang-zh">治理</span></a>
+          <a href="funding.html"><span class="lang-en">Funding</span><span class="lang-zh">资金</span></a>
+        </div>
+        <div class="footer-links">
+          <h4><span class="lang-en">Institution</span><span class="lang-zh">机构</span></h4>
+          <a href="powers.html"><span class="lang-en">Powers & Immunities</span><span class="lang-zh">权力与豁免</span></a>
+          <a href="about.html"><span class="lang-en">About IBCA</span><span class="lang-zh">关于 IBCA</span></a>
+          <a href="contact.html"><span class="lang-en">Contact</span><span class="lang-zh">联系我们</span></a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 International Bank of Climate Adaptation (IBCA). All rights reserved.</p>
+      </div>
     </div>
   </footer>
   <script src="js/main.js"></script>
