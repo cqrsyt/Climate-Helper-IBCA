@@ -1,9 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Funding – IBCA</title>
+  <meta name="description" content="Funding Sources of the International Bank of Climate Adaptation (IBCA)">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="css/style.css">
@@ -12,27 +15,51 @@
   <header class="header" id="header">
     <div class="container nav-container">
       <a href="index.html" class="logo">
-        <img src="logo.png" alt="IBCA Logo" style="height: 42px; width: auto; border-radius: 8px;">
+        <img src="logo.png" alt="IBCA Logo">
         <span>IBCA</span>
       </a>
       <nav class="nav" id="nav">
-        <a href="index.html" class="nav-link">Home</a>
-        <a href="about.html" class="nav-link">About</a>
-        <a href="mandate.html" class="nav-link">Mandate</a>
-        <a href="membership.html" class="nav-link">Membership</a>
-        <a href="governance.html" class="nav-link">Governance</a>
-        <a href="powers.html" class="nav-link">Powers</a>
-        <a href="funding.html" class="nav-link active">Funding</a>
-        <a href="contact.html" class="nav-link">Contact</a>
+        <a href="index.html" class="nav-link">
+          <span class="lang-en">Home</span><span class="lang-zh">首页</span>
+        </a>
+        <a href="about.html" class="nav-link">
+          <span class="lang-en">About</span><span class="lang-zh">关于</span>
+        </a>
+        <a href="mandate.html" class="nav-link">
+          <span class="lang-en">Mandate</span><span class="lang-zh">使命</span>
+        </a>
+        <a href="membership.html" class="nav-link">
+          <span class="lang-en">Membership</span><span class="lang-zh">成员</span>
+        </a>
+        <a href="governance.html" class="nav-link">
+          <span class="lang-en">Governance</span><span class="lang-zh">治理</span>
+        </a>
+        <a href="powers.html" class="nav-link">
+          <span class="lang-en">Powers</span><span class="lang-zh">权力</span>
+        </a>
+        <a href="funding.html" class="nav-link active">
+          <span class="lang-en">Funding</span><span class="lang-zh">资金</span>
+        </a>
+        <a href="contact.html" class="nav-link">
+          <span class="lang-en">Contact</span><span class="lang-zh">联系</span>
+        </a>
+        <button class="lang-switch" id="langSwitch">中文</button>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode"><i class="fas fa-moon"></i></button>
       </nav>
-      <button class="menu-toggle" id="menuToggle"><i class="fas fa-bars"></i></button>
+      <button class="menu-toggle" id="menuToggle" aria-label="Menu"><i class="fas fa-bars"></i></button>
     </div>
   </header>
 
   <section class="page-hero">
     <div class="container">
-      <h1>Funding Sources</h1>
-      <p>Capital structure designed for sustainability and scale</p>
+      <h1>
+        <span class="lang-en">Funding Sources</span>
+        <span class="lang-zh">资金来源</span>
+      </h1>
+      <p>
+        <span class="lang-en">Capital structure designed for sustainability and scale</span>
+        <span class="lang-zh">为可持续性与规模设计的资本结构</span>
+      </p>
     </div>
   </section>
 
@@ -40,43 +67,73 @@
     <div class="container">
       <div class="info-grid">
         <div class="info-card">
-          <h4>1. Member State Capital</h4>
+          <h4><span class="lang-en">1. Member State Capital</span><span class="lang-zh">1. 成员国资本</span></h4>
           <ul>
-            <li>GDP-based paid-in capital</li>
-            <li>Callable capital (rarely used)</li>
+            <li><span class="lang-en">GDP-based paid-in capital</span><span class="lang-zh">基于 GDP 的实缴资本</span></li>
+            <li><span class="lang-en">Callable capital (rarely used)</span><span class="lang-zh">可催缴资本（很少使用）</span></li>
           </ul>
         </div>
         <div class="info-card">
-          <h4>2. Capital Market Borrowing</h4>
+          <h4><span class="lang-en">2. Capital Market Borrowing</span><span class="lang-zh">2. 资本市场借款</span></h4>
           <ul>
-            <li>Issue climate bonds</li>
-            <li>Maintain strong credit rating</li>
+            <li><span class="lang-en">Issue climate bonds</span><span class="lang-zh">发行气候债券</span></li>
+            <li><span class="lang-en">Maintain strong credit rating</span><span class="lang-zh">维持强劲信用评级</span></li>
           </ul>
         </div>
         <div class="info-card">
-          <h4>3. Co-financing Partnerships</h4>
+          <h4><span class="lang-en">3. Co-financing Partnerships</span><span class="lang-zh">3. 共同融资伙伴关系</span></h4>
           <ul>
-            <li>Multilateral Development Banks</li>
-            <li>Climate funds</li>
+            <li><span class="lang-en">Multilateral Development Banks</span><span class="lang-zh">多边开发银行</span></li>
+            <li><span class="lang-en">Climate funds</span><span class="lang-zh">气候基金</span></li>
           </ul>
         </div>
         <div class="info-card">
-          <h4>4. Project Revenue (Revolving)</h4>
+          <h4><span class="lang-en">4. Project Revenue (Revolving)</span><span class="lang-zh">4. 项目收入（循环）</span></h4>
           <ul>
-            <li>Loan repayments</li>
-            <li>Guarantee fees</li>
+            <li><span class="lang-en">Loan repayments</span><span class="lang-zh">贷款偿还</span></li>
+            <li><span class="lang-en">Guarantee fees</span><span class="lang-zh">担保费用</span></li>
           </ul>
         </div>
       </div>
       <div class="content-block" style="margin-top:48px;">
-        <p>The funding model combines traditional paid-in capital from member states with market borrowing capacity and partnerships, creating a revolving and scalable resource base dedicated solely to climate adaptation projects.</p>
+        <p>
+          <span class="lang-en">The funding model combines traditional paid-in capital from member states with market borrowing capacity and partnerships, creating a revolving and scalable resource base dedicated solely to climate adaptation projects.</span>
+          <span class="lang-zh">该融资模式将成员国传统的实缴资本与市场借款能力和伙伴关系相结合，创建了一个仅专门用于气候适应项目的循环且可扩展的资源基础。</span>
+        </p>
       </div>
     </div>
   </section>
 
   <footer class="footer">
     <div class="container">
-      <div class="footer-bottom"><p>© 2026 International Bank of Climate Adaptation (IBCA).</p></div>
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo">
+            <img src="logo.png" alt="IBCA" style="height:36px;">
+            <span>IBCA</span>
+          </div>
+          <p>
+            <span class="lang-en">International Bank of Climate Adaptation<br>Headquarters: Geneva, Switzerland</span>
+            <span class="lang-zh">国际气候适应银行<br>总部：瑞士日内瓦</span>
+          </p>
+        </div>
+        <div class="footer-links">
+          <h4><span class="lang-en">Explore</span><span class="lang-zh">探索</span></h4>
+          <a href="mandate.html"><span class="lang-en">Mandate</span><span class="lang-zh">使命</span></a>
+          <a href="membership.html"><span class="lang-en">Membership</span><span class="lang-zh">成员</span></a>
+          <a href="governance.html"><span class="lang-en">Governance</span><span class="lang-zh">治理</span></a>
+          <a href="funding.html"><span class="lang-en">Funding</span><span class="lang-zh">资金</span></a>
+        </div>
+        <div class="footer-links">
+          <h4><span class="lang-en">Institution</span><span class="lang-zh">机构</span></h4>
+          <a href="powers.html"><span class="lang-en">Powers & Immunities</span><span class="lang-zh">权力与豁免</span></a>
+          <a href="about.html"><span class="lang-en">About IBCA</span><span class="lang-zh">关于 IBCA</span></a>
+          <a href="contact.html"><span class="lang-en">Contact</span><span class="lang-zh">联系我们</span></a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 International Bank of Climate Adaptation (IBCA). All rights reserved.</p>
+      </div>
     </div>
   </footer>
   <script src="js/main.js"></script>
