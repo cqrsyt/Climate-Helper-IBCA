@@ -1,18 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>IBCA – International Bank of Climate Adaptation</title>
-  <meta name="description" content="International Bank of Climate Adaptation (IBCA) – Geneva-based institution dedicated exclusively to financing climate adaptation for the world's most vulnerable countries, prioritising LDCs and SIDS.">
-  <meta property="og:title" content="IBCA – International Bank of Climate Adaptation">
-  <meta property="og:description" content="A proposed Geneva-based international financial institution focused exclusively on climate adaptation.">
-  <meta property="og:type" content="website">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌍</text></svg>">
+  <meta name="description" content="International Bank of Climate Adaptation (IBCA) – Geneva-based institution dedicated exclusively to financing climate adaptation for the world's most vulnerable countries.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -23,32 +20,66 @@
         <span>IBCA</span>
       </a>
       <nav class="nav" id="nav">
-        <a href="index.html" class="nav-link active">Home</a>
-        <a href="about.html" class="nav-link">About</a>
-        <a href="mandate.html" class="nav-link">Mandate</a>
-        <a href="membership.html" class="nav-link">Membership</a>
-        <a href="governance.html" class="nav-link">Governance</a>
-        <a href="powers.html" class="nav-link">Powers</a>
-        <a href="funding.html" class="nav-link">Funding</a>
-        <a href="contact.html" class="nav-link">Contact</a>
+        <a href="index.html" class="nav-link active">
+          <span class="lang-en">Home</span><span class="lang-zh">首页</span>
+        </a>
+        <a href="about.html" class="nav-link">
+          <span class="lang-en">About</span><span class="lang-zh">关于</span>
+        </a>
+        <a href="mandate.html" class="nav-link">
+          <span class="lang-en">Mandate</span><span class="lang-zh">使命</span>
+        </a>
+        <a href="membership.html" class="nav-link">
+          <span class="lang-en">Membership</span><span class="lang-zh">成员</span>
+        </a>
+        <a href="governance.html" class="nav-link">
+          <span class="lang-en">Governance</span><span class="lang-zh">治理</span>
+        </a>
+        <a href="powers.html" class="nav-link">
+          <span class="lang-en">Powers</span><span class="lang-zh">权力</span>
+        </a>
+        <a href="funding.html" class="nav-link">
+          <span class="lang-en">Funding</span><span class="lang-zh">资金</span>
+        </a>
+        <a href="contact.html" class="nav-link">
+          <span class="lang-en">Contact</span><span class="lang-zh">联系</span>
+        </a>
+        <button class="lang-switch" id="langSwitch">中文</button>
         <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode"><i class="fas fa-moon"></i></button>
       </nav>
       <button class="menu-toggle" id="menuToggle" aria-label="Menu"><i class="fas fa-bars"></i></button>
     </div>
   </header>
 
+  <!-- Hero -->
   <section class="hero">
     <div class="container hero-content">
-      <div class="fade-in">
-        <div class="hero-eyebrow">International Financial Institution</div>
-        <h1>International Bank of<br><span>Climate Adaptation</span></h1>
-        <p class="hero-subtitle">A Geneva-based institution dedicated exclusively to financing climate adaptation for the world’s most vulnerable countries — prioritising Least Developed Countries and Small Island Developing States.</p>
+      <div>
+        <div class="hero-eyebrow">
+          <span class="lang-en">International Financial Institution</span>
+          <span class="lang-zh">国际金融机构</span>
+        </div>
+        <h1>
+          <span class="lang-en">International Bank of<br><span>Climate Adaptation</span></span>
+          <span class="lang-zh">国际气候适应银行</span>
+        </h1>
+        <p class="hero-subtitle">
+          <span class="lang-en">A Geneva-based institution dedicated exclusively to financing climate adaptation for the world’s most vulnerable countries — prioritising Least Developed Countries and Small Island Developing States.</span>
+          <span class="lang-zh">总部位于日内瓦的国际金融机构，专门为全球最脆弱国家提供气候适应融资，优先支持最不发达国家（LDCs）和小岛屿发展中国家（SIDS）。</span>
+        </p>
         <div class="hero-cta">
-          <a href="mandate.html" class="btn btn-primary">Explore Our Mandate <i class="fas fa-arrow-right"></i></a>
-          <a href="membership.html" class="btn btn-outline">Membership</a>
+          <a href="mandate.html" class="btn btn-primary">
+            <span class="lang-en">Explore Our Mandate</span>
+            <span class="lang-zh">了解我们的使命</span>
+            <i class="fas fa-arrow-right"></i>
+          </a>
+          <a href="membership.html" class="btn btn-outline">
+            <span class="lang-en">Membership</span>
+            <span class="lang-zh">成员资格</span>
+          </a>
         </div>
       </div>
-      <div class="hero-visual fade-in">
+      <div class="hero-visual">
         <div class="globe-ring">
           <i class="fas fa-globe-americas"></i>
         </div>
@@ -56,147 +87,122 @@
     </div>
   </section>
 
+  <!-- Stats -->
   <section class="stats">
     <div class="container">
       <div class="stats-grid">
         <div class="stat-item">
           <h3>Geneva</h3>
-          <p>Headquarters</p>
+          <p><span class="lang-en">Headquarters</span><span class="lang-zh">总部</span></p>
         </div>
         <div class="stat-item">
-          <h3>Exclusive</h3>
-          <p>Climate Adaptation Focus</p>
+          <h3><span class="lang-en">Exclusive</span><span class="lang-zh">专属</span></h3>
+          <p><span class="lang-en">Climate Adaptation Focus</span><span class="lang-zh">气候适应专注</span></p>
         </div>
         <div class="stat-item">
           <h3>LDCs & SIDS</h3>
-          <p>Priority Recipients</p>
+          <p><span class="lang-en">Priority Recipients</span><span class="lang-zh">优先受援对象</span></p>
         </div>
         <div class="stat-item">
-          <h3>Double-Majority</h3>
-          <p>Decision System</p>
+          <h3><span class="lang-en">Double-Majority</span><span class="lang-zh">双重多数</span></h3>
+          <p><span class="lang-en">Decision System</span><span class="lang-zh">决策机制</span></p>
         </div>
       </div>
     </div>
   </section>
 
+  <!-- Map Section -->
+  <section class="map-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>
+          <span class="lang-en">Global Presence & Priority Regions</span>
+          <span class="lang-zh">全球布局与优先地区</span>
+        </h2>
+        <p>
+          <span class="lang-en">Headquarters in Geneva. Example locations of highly climate-vulnerable LDCs and SIDS (illustrative, membership not yet finalized).</span>
+          <span class="lang-zh">总部位于日内瓦。以下为部分气候高度脆弱的最不发达国家与小岛屿发展中国家示例位置（仅供说明，成员国尚未最终确定）。</span>
+        </p>
+      </div>
+      <div id="ibca-map" class="map-container"></div>
+    </div>
+  </section>
+
+  <!-- Purpose Cards -->
   <section class="section">
     <div class="container">
-      <div class="section-header fade-in">
-        <h2>Exclusive Purpose</h2>
-        <p>Founded on sound banking principles and strictly precluded from diversifying its mandate.</p>
+      <div class="section-header">
+        <h2>
+          <span class="lang-en">Exclusive Purpose</span>
+          <span class="lang-zh">专属宗旨</span>
+        </h2>
+        <p>
+          <span class="lang-en">Founded on sound banking principles and strictly precluded from diversifying its mandate.</span>
+          <span class="lang-zh">基于稳健的银行原则，并严格禁止扩展其使命范围。</span>
+        </p>
       </div>
       <div class="cards">
-        <div class="card fade-in">
+        <div class="card">
           <div class="card-icon"><i class="fas fa-building-shield"></i></div>
-          <h3>Resilient Infrastructure</h3>
-          <p>Financing climate-resilient infrastructure that protects the most vulnerable communities from escalating climate risks.</p>
+          <h3><span class="lang-en">Resilient Infrastructure</span><span class="lang-zh">韧性基础设施</span></h3>
+          <p>
+            <span class="lang-en">Financing climate-resilient infrastructure that protects the most vulnerable communities from escalating climate risks.</span>
+            <span class="lang-zh">为保护最脆弱社区免受不断升级的气候风险，资助气候韧性基础设施。</span>
+          </p>
         </div>
-        <div class="card fade-in">
+        <div class="card">
           <div class="card-icon"><i class="fas fa-flask"></i></div>
-          <h3>Scientific Research</h3>
-          <p>Supporting essential research that underpins effective, evidence-based adaptation strategies worldwide.</p>
+          <h3><span class="lang-en">Scientific Research</span><span class="lang-zh">科学研究</span></h3>
+          <p>
+            <span class="lang-en">Supporting essential research that underpins effective, evidence-based adaptation strategies worldwide.</span>
+            <span class="lang-zh">支持为全球有效、基于证据的适应策略提供基础的关键研究。</span>
+          </p>
         </div>
-        <div class="card fade-in">
+        <div class="card">
           <div class="card-icon"><i class="fas fa-leaf"></i></div>
-          <h3>Ecosystem Restoration</h3>
-          <p>Investing in the restoration of ecosystems critical to long-term climate resilience and community livelihoods.</p>
+          <h3><span class="lang-en">Ecosystem Restoration</span><span class="lang-zh">生态系统恢复</span></h3>
+          <p>
+            <span class="lang-en">Investing in the restoration of ecosystems critical to long-term climate resilience and community livelihoods.</span>
+            <span class="lang-zh">投资于对长期气候韧性和社区生计至关重要的生态系统恢复。</span>
+          </p>
         </div>
-      </div>
-      <div class="text-center mt-5">
-        <a href="mandate.html" class="btn btn-primary">Read Full Mandate</a>
       </div>
     </div>
   </section>
 
+  <!-- Why IBCA -->
   <section class="section" style="background: var(--light);">
     <div class="container">
       <div class="two-col">
-        <div class="fade-in">
-          <h2>Why a Dedicated Institution?</h2>
-          <p style="color: var(--gray); margin: 20px 0 28px;">Existing international financial institutions and climate funds have inadequately addressed the urgent adaptation needs of the most vulnerable. Extreme weather, sea-level rise and ecosystem degradation disproportionately threaten Least Developed Countries and Small Island Developing States.</p>
-          <p style="color: var(--gray); margin-bottom: 32px;">IBCA fills this critical gap with a narrow, legally binding mandate that prevents mission creep while delivering focused, accountable support.</p>
-          <a href="about.html" class="btn btn-outline">Learn About IBCA</a>
+        <div>
+          <h2>
+            <span class="lang-en">Why a Dedicated Institution?</span>
+            <span class="lang-zh">为什么需要专门机构？</span>
+          </h2>
+          <p style="color: var(--gray); margin: 20px 0 28px;">
+            <span class="lang-en">Existing international financial institutions and climate funds have inadequately addressed the urgent adaptation needs of the most vulnerable. Extreme weather, sea-level rise and ecosystem degradation disproportionately threaten Least Developed Countries and Small Island Developing States.</span>
+            <span class="lang-zh">现有国际金融机构和气候基金未能充分满足最脆弱国家的紧急适应需求。极端天气、海平面上升和生态系统退化对最不发达国家和小岛屿发展中国家构成不成比例的威胁。</span>
+          </p>
+          <a href="about.html" class="btn btn-outline">
+            <span class="lang-en">Learn About IBCA</span>
+            <span class="lang-zh">了解 IBCA</span>
+          </a>
         </div>
-        <div class="highlight-panel fade-in">
-          <h3>Core Design Principles</h3>
+        <div class="highlight-panel">
+          <h3>
+            <span class="lang-en">Core Design Principles</span>
+            <span class="lang-zh">核心设计原则</span>
+          </h3>
           <ul>
-            <li><i class="fas fa-check-circle"></i> Exclusive focus on climate adaptation only</li>
-            <li><i class="fas fa-check-circle"></i> Sound banking principles</li>
-            <li><i class="fas fa-check-circle"></i> Priority to LDCs and SIDS</li>
-            <li><i class="fas fa-check-circle"></i> Innovative yet robust governance</li>
-            <li><i class="fas fa-check-circle"></i> Close cooperation with WMO & UN agencies</li>
-            <li><i class="fas fa-check-circle"></i> Win-win partnership model</li>
+            <li><i class="fas fa-check-circle"></i> <span class="lang-en">Exclusive focus on climate adaptation only</span><span class="lang-zh">仅专注于气候适应</span></li>
+            <li><i class="fas fa-check-circle"></i> <span class="lang-en">Sound banking principles</span><span class="lang-zh">稳健的银行原则</span></li>
+            <li><i class="fas fa-check-circle"></i> <span class="lang-en">Priority to LDCs and SIDS</span><span class="lang-zh">优先支持 LDCs 与 SIDS</span></li>
+            <li><i class="fas fa-check-circle"></i> <span class="lang-en">Innovative yet robust governance</span><span class="lang-zh">创新且稳健的治理结构</span></li>
+            <li><i class="fas fa-check-circle"></i> <span class="lang-en">Close cooperation with WMO & UN agencies</span><span class="lang-zh">与 WMO 及联合国机构紧密合作</span></li>
+            <li><i class="fas fa-check-circle"></i> <span class="lang-en">Win-win partnership model</span><span class="lang-zh">共赢合作模式</span></li>
           </ul>
         </div>
       </div>
-    </div>
-  </section>
-
-  <!-- Latest Updates -->
-  <section class="section">
-    <div class="container">
-      <div class="section-header fade-in">
-        <h2>Latest Updates</h2>
-        <p>Progress on the establishment of the International Bank of Climate Adaptation</p>
-      </div>
-      <div class="news-grid">
-        <div class="news-card fade-in">
-          <div class="news-date">July 2026</div>
-          <h3>Institutional Design Finalised</h3>
-          <p>Core governance structure, membership model and decision-making mechanisms have been refined based on international best practices.</p>
-        </div>
-        <div class="news-card fade-in">
-          <div class="news-date">June 2026</div>
-          <h3>Concept Framework Released</h3>
-          <p>The foundational concept paper outlining IBCA’s exclusive mandate and operational principles is now available for review.</p>
-        </div>
-        <div class="news-card fade-in">
-          <div class="news-date">2026</div>
-          <h3>Stakeholder Consultations Ongoing</h3>
-          <p>Engagement with potential contributing and recipient members, as well as specialised agencies, continues.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Documents -->
-  <section class="section" style="background: var(--light);">
-    <div class="container">
-      <div class="section-header fade-in">
-        <h2>Key Documents</h2>
-        <p>Official materials related to the proposed institution</p>
-      </div>
-      <div class="docs-grid">
-        <div class="doc-card fade-in">
-          <div class="doc-icon"><i class="fas fa-file-pdf"></i></div>
-          <div class="doc-info">
-            <h4>Concept Framework</h4>
-            <p>Core institutional design & mandate</p>
-          </div>
-        </div>
-        <div class="doc-card fade-in">
-          <div class="doc-icon"><i class="fas fa-file-alt"></i></div>
-          <div class="doc-info">
-            <h4>Governance Overview</h4>
-            <p>Assembly, Committee & decision rules</p>
-          </div>
-        </div>
-        <div class="doc-card fade-in">
-          <div class="doc-icon"><i class="fas fa-landmark"></i></div>
-          <div class="doc-info">
-            <h4>Membership Model</h4>
-            <p>Contributing & recipient categories</p>
-          </div>
-        </div>
-        <div class="doc-card fade-in">
-          <div class="doc-icon"><i class="fas fa-balance-scale"></i></div>
-          <div class="doc-info">
-            <h4>Powers & Immunities</h4>
-            <p>Legal status and protections</p>
-          </div>
-        </div>
-      </div>
-      <p class="text-center mt-4" style="color: var(--gray); font-size: 0.9rem;">Full PDF documents will be made available as the proposal advances.</p>
     </div>
   </section>
 
@@ -204,24 +210,27 @@
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
-          <a href="index.html" class="logo">
-            <img src="logo.png" alt="IBCA" style="height:36px; border-radius:6px;">
-            <span style="color:white;">IBCA</span>
-          </a>
-          <p>International Bank of Climate Adaptation<br>Headquarters: Geneva, Switzerland</p>
+          <div class="logo">
+            <img src="logo.png" alt="IBCA" style="height:36px;">
+            <span>IBCA</span>
+          </div>
+          <p>
+            <span class="lang-en">International Bank of Climate Adaptation<br>Headquarters: Geneva, Switzerland</span>
+            <span class="lang-zh">国际气候适应银行<br>总部：瑞士日内瓦</span>
+          </p>
         </div>
         <div class="footer-links">
-          <h4>Explore</h4>
-          <a href="mandate.html">Mandate</a>
-          <a href="membership.html">Membership</a>
-          <a href="governance.html">Governance</a>
-          <a href="funding.html">Funding</a>
+          <h4><span class="lang-en">Explore</span><span class="lang-zh">探索</span></h4>
+          <a href="mandate.html"><span class="lang-en">Mandate</span><span class="lang-zh">使命</span></a>
+          <a href="membership.html"><span class="lang-en">Membership</span><span class="lang-zh">成员</span></a>
+          <a href="governance.html"><span class="lang-en">Governance</span><span class="lang-zh">治理</span></a>
+          <a href="funding.html"><span class="lang-en">Funding</span><span class="lang-zh">资金</span></a>
         </div>
         <div class="footer-links">
-          <h4>Institution</h4>
-          <a href="powers.html">Powers & Immunities</a>
-          <a href="about.html">About IBCA</a>
-          <a href="contact.html">Contact</a>
+          <h4><span class="lang-en">Institution</span><span class="lang-zh">机构</span></h4>
+          <a href="powers.html"><span class="lang-en">Powers & Immunities</span><span class="lang-zh">权力与豁免</span></a>
+          <a href="about.html"><span class="lang-en">About IBCA</span><span class="lang-zh">关于 IBCA</span></a>
+          <a href="contact.html"><span class="lang-en">Contact</span><span class="lang-zh">联系我们</span></a>
         </div>
       </div>
       <div class="footer-bottom">
@@ -230,6 +239,7 @@
     </div>
   </footer>
 
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
