@@ -1,9 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Membership – IBCA</title>
+  <meta name="description" content="Membership of the International Bank of Climate Adaptation (IBCA)">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="css/style.css">
@@ -12,61 +15,121 @@
   <header class="header" id="header">
     <div class="container nav-container">
       <a href="index.html" class="logo">
-        <img src="logo.png" alt="IBCA Logo" style="height: 42px; width: auto; border-radius: 8px;">
+        <img src="logo.png" alt="IBCA Logo">
         <span>IBCA</span>
       </a>
       <nav class="nav" id="nav">
-        <a href="index.html" class="nav-link">Home</a>
-        <a href="about.html" class="nav-link">About</a>
-        <a href="mandate.html" class="nav-link">Mandate</a>
-        <a href="membership.html" class="nav-link active">Membership</a>
-        <a href="governance.html" class="nav-link">Governance</a>
-        <a href="powers.html" class="nav-link">Powers</a>
-        <a href="funding.html" class="nav-link">Funding</a>
-        <a href="contact.html" class="nav-link">Contact</a>
+        <a href="index.html" class="nav-link">
+          <span class="lang-en">Home</span><span class="lang-zh">首页</span>
+        </a>
+        <a href="about.html" class="nav-link">
+          <span class="lang-en">About</span><span class="lang-zh">关于</span>
+        </a>
+        <a href="mandate.html" class="nav-link">
+          <span class="lang-en">Mandate</span><span class="lang-zh">使命</span>
+        </a>
+        <a href="membership.html" class="nav-link active">
+          <span class="lang-en">Membership</span><span class="lang-zh">成员</span>
+        </a>
+        <a href="governance.html" class="nav-link">
+          <span class="lang-en">Governance</span><span class="lang-zh">治理</span>
+        </a>
+        <a href="powers.html" class="nav-link">
+          <span class="lang-en">Powers</span><span class="lang-zh">权力</span>
+        </a>
+        <a href="funding.html" class="nav-link">
+          <span class="lang-en">Funding</span><span class="lang-zh">资金</span>
+        </a>
+        <a href="contact.html" class="nav-link">
+          <span class="lang-en">Contact</span><span class="lang-zh">联系</span>
+        </a>
+        <button class="lang-switch" id="langSwitch">中文</button>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode"><i class="fas fa-moon"></i></button>
       </nav>
-      <button class="menu-toggle" id="menuToggle"><i class="fas fa-bars"></i></button>
+      <button class="menu-toggle" id="menuToggle" aria-label="Menu"><i class="fas fa-bars"></i></button>
     </div>
   </header>
 
   <section class="page-hero">
     <div class="container">
-      <h1>Membership</h1>
-      <p>Contributing Members, Recipient Members and Non-State participation</p>
+      <h1>
+        <span class="lang-en">Membership</span>
+        <span class="lang-zh">成员资格</span>
+      </h1>
+      <p>
+        <span class="lang-en">Contributing Members, Recipient Members and Non-State participation</span>
+        <span class="lang-zh">出资成员、受援成员与非国家参与</span>
+      </p>
     </div>
   </section>
 
   <section class="content-section">
     <div class="container">
       <div class="content-block">
-        <h2>Two Categories of Membership</h2>
+        <h2>
+          <span class="lang-en">Two Categories of Membership</span>
+          <span class="lang-zh">两类成员资格</span>
+        </h2>
         <div class="info-grid">
           <div class="info-card" style="border-left-color: #a3e635;">
-            <h4><i class="fas fa-hand-holding-dollar"></i> Contributing Members</h4>
-            <p>Provide funds to the Bank. Capital contribution is based on GDP. Greater contributions mean more votes under the weighted voting system — a standard of financial institutions.</p>
+            <h4><i class="fas fa-hand-holding-dollar"></i> <span class="lang-en">Contributing Members</span><span class="lang-zh">出资成员</span></h4>
+            <p>
+              <span class="lang-en">Provide funds to the Bank. Capital contribution is based on GDP. Greater contributions mean more votes under the weighted voting system — a standard of financial institutions.</span>
+              <span class="lang-zh">向银行提供资金。资本贡献基于 GDP。贡献越大，在加权投票制度下的投票权越多——这是金融机构的标准做法。</span>
+            </p>
           </div>
           <div class="info-card" style="border-left-color: #0ea5e9;">
-            <h4><i class="fas fa-globe"></i> Recipient Members</h4>
-            <p>Climate-vulnerable countries that benefit from IBCA financing. Priority is given to Least Developed Countries and Small Island Developing States.</p>
+            <h4><i class="fas fa-globe"></i> <span class="lang-en">Recipient Members</span><span class="lang-zh">受援成员</span></h4>
+            <p>
+              <span class="lang-en">Climate-vulnerable countries that benefit from IBCA financing. Priority is given to Least Developed Countries and Small Island Developing States.</span>
+              <span class="lang-zh">受益于 IBCA 融资的气候脆弱国家。优先支持最不发达国家和小岛屿发展中国家。</span>
+            </p>
           </div>
         </div>
       </div>
 
       <div class="content-block">
-        <h2>Membership Criteria</h2>
+        <h2>
+          <span class="lang-en">Membership Criteria</span>
+          <span class="lang-zh">成员标准</span>
+        </h2>
         <ul>
-          <li><strong>UN Membership</strong> — Eligibility is linked to United Nations membership.</li>
-          <li><strong>Capital Donation based on GDP</strong> (for Contributing Members) — Reflects contribution capacity and determines weighted voting power.</li>
+          <li><strong><span class="lang-en">UN Membership</span><span class="lang-zh">联合国成员资格</span></strong> — <span class="lang-en">Eligibility is linked to United Nations membership.</span><span class="lang-zh">资格与联合国成员资格挂钩。</span></li>
+          <li><strong><span class="lang-en">Capital Donation based on GDP</span><span class="lang-zh">基于 GDP 的资本捐助</span></strong> (<span class="lang-en">for Contributing Members</span><span class="lang-zh">针对出资成员</span>) — <span class="lang-en">Reflects contribution capacity and determines weighted voting power.</span><span class="lang-zh">反映贡献能力并决定加权投票权。</span></li>
         </ul>
-        <p>Differentiated status based on contribution capacity is reflected in weighted voting: greater contributions mean more votes.</p>
+        <p>
+          <span class="lang-en">Differentiated status based on contribution capacity is reflected in weighted voting: greater contributions mean more votes.</span>
+          <span class="lang-zh">基于贡献能力的差异化地位体现在加权投票中：贡献越大，投票权越多。</span>
+        </p>
       </div>
 
       <div class="content-block">
-        <h2>Non-State Participation</h2>
+        <h2>
+          <span class="lang-en">Non-State Participation</span>
+          <span class="lang-zh">非国家参与</span>
+        </h2>
         <div class="info-grid">
-          <div class="info-card"><h4>Technical Advisory Panel</h4><p>Scientists and experts from non-state institutions provide technical guidance.</p></div>
-          <div class="info-card"><h4>Joint Financing Partnership</h4><p>Commercial banks and investors can partner in co-financing arrangements.</p></div>
-          <div class="info-card"><h4>Close Connection with WMO</h4><p>Strong institutional link with the World Meteorological Organization for climate data that underpins funding decisions.</p></div>
+          <div class="info-card">
+            <h4><span class="lang-en">Technical Advisory Panel</span><span class="lang-zh">技术咨询小组</span></h4>
+            <p>
+              <span class="lang-en">Scientists and experts from non-state institutions provide technical guidance.</span>
+              <span class="lang-zh">来自非国家机构的科学家和专家提供技术指导。</span>
+            </p>
+          </div>
+          <div class="info-card">
+            <h4><span class="lang-en">Joint Financing Partnership</span><span class="lang-zh">联合融资伙伴关系</span></h4>
+            <p>
+              <span class="lang-en">Commercial banks and investors can partner in co-financing arrangements.</span>
+              <span class="lang-zh">商业银行和投资者可参与共同融资安排。</span>
+            </p>
+          </div>
+          <div class="info-card">
+            <h4><span class="lang-en">Close Connection with WMO</span><span class="lang-zh">与世界气象组织的紧密联系</span></h4>
+            <p>
+              <span class="lang-en">Strong institutional link with the World Meteorological Organization for climate data that underpins funding decisions.</span>
+              <span class="lang-zh">与世界气象组织建立强大的机构联系，获取支撑融资决策的气候数据。</span>
+            </p>
+          </div>
         </div>
       </div>
     </div>
@@ -74,7 +137,34 @@
 
   <footer class="footer">
     <div class="container">
-      <div class="footer-bottom"><p>© 2026 International Bank of Climate Adaptation (IBCA).</p></div>
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo">
+            <img src="logo.png" alt="IBCA" style="height:36px;">
+            <span>IBCA</span>
+          </div>
+          <p>
+            <span class="lang-en">International Bank of Climate Adaptation<br>Headquarters: Geneva, Switzerland</span>
+            <span class="lang-zh">国际气候适应银行<br>总部：瑞士日内瓦</span>
+          </p>
+        </div>
+        <div class="footer-links">
+          <h4><span class="lang-en">Explore</span><span class="lang-zh">探索</span></h4>
+          <a href="mandate.html"><span class="lang-en">Mandate</span><span class="lang-zh">使命</span></a>
+          <a href="membership.html"><span class="lang-en">Membership</span><span class="lang-zh">成员</span></a>
+          <a href="governance.html"><span class="lang-en">Governance</span><span class="lang-zh">治理</span></a>
+          <a href="funding.html"><span class="lang-en">Funding</span><span class="lang-zh">资金</span></a>
+        </div>
+        <div class="footer-links">
+          <h4><span class="lang-en">Institution</span><span class="lang-zh">机构</span></h4>
+          <a href="powers.html"><span class="lang-en">Powers & Immunities</span><span class="lang-zh">权力与豁免</span></a>
+          <a href="about.html"><span class="lang-en">About IBCA</span><span class="lang-zh">关于 IBCA</span></a>
+          <a href="contact.html"><span class="lang-en">Contact</span><span class="lang-zh">联系我们</span></a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 International Bank of Climate Adaptation (IBCA). All rights reserved.</p>
+      </div>
     </div>
   </footer>
   <script src="js/main.js"></script>
